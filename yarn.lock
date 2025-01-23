@@ -2224,15 +2224,34 @@
     unbzip2-stream "1.4.3"
     yargs "17.7.2"
 
-"@react-pdf/primitives@link:packages/primitives":
-  version "4.0.0"
-
-"@react-pdf/render@link:packages/render":
-  version "4.0.2"
+"@react-pdf/layout@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/layout/react-pdf-layout-v4.2.0.tgz":
+  version "4.2.0"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/layout/react-pdf-layout-v4.2.0.tgz#7ed699617a3b790319123706c0ee697d8bd08dc5"
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@react-pdf/fns" "3.0.0"
-    "@react-pdf/primitives" "link:packages/primitives"
+    "@react-pdf/image" "^3.0.1"
+    "@react-pdf/pdfkit" "^4.0.0"
+    "@react-pdf/primitives" "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz"
+    "@react-pdf/stylesheet" "^5.2.0"
+    "@react-pdf/textkit" "^5.0.1"
+    "@react-pdf/types" "^2.7.0"
+    emoji-regex "^10.3.0"
+    queue "^6.0.1"
+    yoga-layout "^3.2.1"
+
+"@react-pdf/primitives@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz":
+  version "4.0.0"
+  uid "8141be9893c999fd1eeb78429ad75c6662a9b758"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz#8141be9893c999fd1eeb78429ad75c6662a9b758"
+
+"@react-pdf/render@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/render/react-pdf-render-v4.0.2.tgz":
+  version "4.0.2"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/render/react-pdf-render-v4.0.2.tgz#ef032e3e09c14aa8a5ac303d25c1c740f1fded36"
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/fns" "3.0.0"
+    "@react-pdf/primitives" "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz"
     "@react-pdf/textkit" "^5.0.1"
     "@react-pdf/types" "^2.7.0"
     abs-svg-path "^0.1.1"
