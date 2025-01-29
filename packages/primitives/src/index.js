@@ -12,6 +12,7 @@ export const FormField = 'FORM_FIELD';
 export const TextInput = 'TEXT_INPUT';
 export const Select = 'SELECT';
 export const Checkbox = 'CHECKBOX';
+export const RadioButton = 'RADIO_BUTTON';
 export const List = 'LIST';
 export const Stop = 'STOP';
 export const Defs = 'DEFS';

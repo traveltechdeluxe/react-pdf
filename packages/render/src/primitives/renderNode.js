@@ -17,6 +17,7 @@ import renderSelect from './form/renderSelect';
 import renderFormField, { cleanUpFormField } from './form/renderFormField';
 import renderList from './form/renderList';
 import renderCheckbox from './form/renderCheckbox';
+import renderRadioButton from './form/renderRadiobutton';
 
 const isRecursiveNode = (node) => node.type !== P.Text && node.type !== P.Svg;
 
@@ -44,6 +45,7 @@ const renderFns = {
   [P.TextInput]: renderTextInput,
   [P.Select]: renderSelect,
   [P.Checkbox]: renderCheckbox,
+  [P.RadioButton]: renderRadioButton,
   [P.List]: renderList,
   [P.Canvas]: renderCanvas,
   [P.Svg]: renderSvg,

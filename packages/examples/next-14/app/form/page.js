@@ -11,6 +11,7 @@ import {
   TextInput,
   Select,
   List,
+  RadioButton,
 } from '@react-pdf/renderer';
 
 const PDFViewer = dynamic(
@@ -62,6 +63,45 @@ export default function Form() {
               checked
               style={{ height: '20px' }}
             />
+
+            <View>
+              <Text>RadioButton</Text>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  gap: 10,
+                  backgroundColor: '#eeeeee',
+                  padding: 10,
+                }}
+              >
+                <RadioButton
+                  name="radio-button"
+                  style={{ height: '20px', width: '20px' }}
+                  exportValues={['A']}
+                  value="A"
+                  defaultValue="A"
+                  checked
+                />
+                <Text>Radiobutton A</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  gap: 10,
+                  backgroundColor: '#eeeeee',
+                  padding: 10,
+                }}
+              >
+                <RadioButton
+                  name="radio-button"
+                  style={{ height: '20px', width: '20px' }}
+                  exportValues={['B']}
+                  value="A"
+                  defaultValue="A"
+                />
+                <Text>Radiobutton B</Text>
+              </View>
+            </View>
 
             <Text>Select</Text>
             <Select
