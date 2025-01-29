@@ -333,6 +333,44 @@ declare namespace ReactPDF {
 
   export class List extends React.Component<SelectAndListProps> {}
 
+  interface SignatureProps extends FormCommonProps {
+    name: string;
+    /**
+     * Lock after signing
+     */
+    lock?: boolean;
+    /**
+     * Signature flags
+     */
+    flags?: string;
+    /**
+     * Preferred signature handler
+     */
+    filter?: string;
+    /**
+     * Encoding of signature value
+     */
+    subFilter?: string;
+    /**
+     * Reason for signing
+     */
+    reason?: string;
+    /**
+     * Signer's contact info
+     */
+    contactInfo?: string;
+    /**
+     * Physical location of signing
+     */
+    location?: string;
+    /**
+     * Time of signing
+     */
+    signedDate?: string;
+  }
+
+  export class Signature extends React.Component<SignatureProps> {}
+
   interface NoteProps extends NodeProps {
     children: string;
   }

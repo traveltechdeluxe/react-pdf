@@ -13,6 +13,7 @@ export const TextInput = 'TEXT_INPUT';
 export const Select = 'SELECT';
 export const Checkbox = 'CHECKBOX';
 export const List = 'LIST';
+export const Signature = 'SIGNATURE';
 export const Stop = 'STOP';
 export const Defs = 'DEFS';
 export const Image = 'IMAGE';
