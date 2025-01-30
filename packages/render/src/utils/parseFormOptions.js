@@ -111,8 +111,24 @@ const parseCheckboxOptions = (ctx, node, formField) => {
   });
 };
 
+const parseRadioButtonOptions = (node, formField) => {
+  const onState = '/Yes';
+  const offState = '/Off';
+
+  return clean({
+    ...parseCommonFormOptions(node),
+    parent: formField || undefined,
+    AS: node.props?.checked === true ? onState : offState,
+    // If this radio button's exportValue matches the group's value, it's selected
+    V: node.props?.value || undefined, // The value of the radio grup
+    DV: node.props?.defaultValue || undefined, // The default value of the radio group
+    Opt: node.props?.exportValues || undefined, // The export values of this specific radio button
+  });
+};
+
 export {
   parseTextFieldOptions,
   parseSelectAndListFieldOptions,
   parseCheckboxOptions,
+  parseRadioButtonOptions,
 };

@@ -307,6 +307,17 @@ declare namespace ReactPDF {
 
   export class Checkbox extends React.Component<CheckboxProps> {}
 
+  interface RadioButtonProps extends FormCommonProps {
+    backgroundColor?: string;
+    borderColor?: string;
+    checked?: boolean;
+    exportValues?: string[];
+    value?: string;
+    defaultValue?: string;
+  }
+
+  export class RadioButton extends React.Component<RadioButtonProps> {}
+
   interface SelectAndListPropsBase extends FormCommonProps {
     sort?: boolean;
     edit?: boolean;
