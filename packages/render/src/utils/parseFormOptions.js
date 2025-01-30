@@ -111,8 +111,25 @@ const parseCheckboxOptions = (ctx, node, formField) => {
   });
 };
 
+const parseSignatureOptions = (node, formField) => {
+  return clean({
+    ...parseCommonFormOptions(node),
+    parent: formField || undefined,
+    // Signature-specific properties
+    lock: node.props?.lock || undefined,
+    flags: node.props?.flags || undefined,
+    filter: node.props?.filter || undefined,
+    subFilter: node.props?.subFilter || undefined,
+    reason: node.props?.reason || undefined,
+    contactInfo: node.props?.contactInfo || undefined,
+    location: node.props?.location || undefined,
+    signedDate: node.props?.signedDate || undefined,
+  });
+};
+
 export {
   parseTextFieldOptions,
   parseSelectAndListFieldOptions,
   parseCheckboxOptions,
+  parseSignatureOptions,
 };

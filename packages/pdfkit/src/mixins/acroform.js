@@ -165,6 +165,10 @@ export default {
     return this.formAnnotation(name, 'checkbox', x, y, w, h, options);
   },
 
+  formSignature(name, x, y, w, h, options = {}) {
+    return this.formAnnotation(name, 'signature', x, y, w, h, options);
+  },
+
   _addToParent(fieldRef) {
     let parent = fieldRef.data.Parent;
     if (parent) {
@@ -218,6 +222,8 @@ export default {
       opts.combo = true;
     } else if (type === 'list') {
       opts.FT = 'Ch';
+    } else if (type === 'signature') {
+      opts.FT = 'Sig';
     } else {
       throw new Error(`Invalid form annotation type '${type}'`);
     }

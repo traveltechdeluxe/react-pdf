@@ -11,6 +11,7 @@ import {
   TextInput,
   Select,
   List,
+  Signature,
 } from '@react-pdf/renderer';
 
 const PDFViewer = dynamic(
@@ -33,6 +34,9 @@ export default function Form() {
           }}
         >
           <FormField name="user-info" style={{ flexDirection: 'column' }}>
+            <Text>Signature</Text>
+            <Signature name="signature" style={{ height: '50px' }} />
+
             <Text>TextInput</Text>
             <TextInput
               name="username"
