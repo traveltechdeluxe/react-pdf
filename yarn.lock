@@ -754,6 +754,7 @@
     "@babel/helper-plugin-utils" "^7.18.6"
 
 "@babel/plugin-transform-react-jsx-development@^7.18.6", "@babel/plugin-transform-react-jsx-self@^7.23.3":
+  name "@babel/plugin-transform-react-jsx-development"
   version "7.23.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.23.3.tgz#ed3e7dadde046cce761a8e3cf003a13d1a7972d9"
   integrity sha512-qXRvbeKDSfwnlJnanVRp0SfuWE5DQhwQr5xtLBzp56Wabyo+4CMosF6Kfp+eOD/4FYpql64XVJ2W0pVLlJZxOQ==
@@ -2222,6 +2223,42 @@
     tar-fs "3.0.4"
     unbzip2-stream "1.4.3"
     yargs "17.7.2"
+
+"@react-pdf/layout@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/layout/react-pdf-layout-v4.2.0.tgz":
+  version "4.2.0"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/layout/react-pdf-layout-v4.2.0.tgz#7ed699617a3b790319123706c0ee697d8bd08dc5"
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/fns" "3.0.0"
+    "@react-pdf/image" "^3.0.1"
+    "@react-pdf/pdfkit" "^4.0.0"
+    "@react-pdf/primitives" "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz"
+    "@react-pdf/stylesheet" "^5.2.0"
+    "@react-pdf/textkit" "^5.0.1"
+    "@react-pdf/types" "^2.7.0"
+    emoji-regex "^10.3.0"
+    queue "^6.0.1"
+    yoga-layout "^3.2.1"
+
+"@react-pdf/primitives@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz":
+  version "4.0.0"
+  uid "8141be9893c999fd1eeb78429ad75c6662a9b758"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz#8141be9893c999fd1eeb78429ad75c6662a9b758"
+
+"@react-pdf/render@https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/render/react-pdf-render-v4.0.2.tgz":
+  version "4.0.2"
+  resolved "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/render/react-pdf-render-v4.0.2.tgz#ef032e3e09c14aa8a5ac303d25c1c740f1fded36"
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    "@react-pdf/fns" "3.0.0"
+    "@react-pdf/primitives" "https://github.com/traveltechdeluxe/react-pdf/raw/feat/form-annotation-live/packages/primitives/react-pdf-primitives-v4.0.0.tgz"
+    "@react-pdf/textkit" "^5.0.1"
+    "@react-pdf/types" "^2.7.0"
+    abs-svg-path "^0.1.1"
+    color-string "^1.9.1"
+    normalize-svg-path "^1.1.0"
+    parse-svg-path "^0.1.2"
+    svg-arc-to-cubic-bezier "^3.2.0"
 
 "@rollup/plugin-alias@^5.1.0":
   version "5.1.0"
@@ -8667,6 +8704,7 @@ randombytes@^2.1.0:
     object-assign "^4.1.1"
 
 "react-19@npm:react@19.0.0-rc-66855b96-20241106", react@19.0.0-rc-66855b96-20241106:
+  name react-19
   version "19.0.0-rc-66855b96-20241106"
   resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-66855b96-20241106.tgz#f04d7283454a32bdd8e9757db4308b75b9739e56"
   integrity sha512-klH7xkT71SxRCx4hb1hly5FJB21Hz0ACyxbXYAECEqssUjtJeFUAaI2U1DgJAzkGEnvEm3DkxuBchMC/9K4ipg==
@@ -8691,6 +8729,7 @@ randombytes@^2.1.0:
     scheduler "^0.20.2"
 
 "react-dom-19@npm:react-dom@19.0.0-rc-66855b96-20241106", react-dom@19.0.0-rc-66855b96-20241106:
+  name react-dom-19
   version "19.0.0-rc-66855b96-20241106"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0-rc-66855b96-20241106.tgz#beba73decfd1b9365a3c83673a298623b15acb0b"
   integrity sha512-D25vdaytZ1wFIRiwNU98NPQ/upS2P8Co4/oNoa02PzHbh8deWdepjm5qwZM/46OdSiGv4WSWwxP55RO9obqJEQ==
